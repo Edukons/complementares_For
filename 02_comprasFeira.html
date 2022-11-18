@@ -13,13 +13,26 @@
 
     Após o usuário informar a quantia vendida para cada item, calcule e apresente o faturamento do feirante.
     */
-
+    
     //ENTRADA
-
-
+    let tomate = Number(prompt("Informe a quantidade de tomates vendidos em kg:"));
+    let batata = Number(prompt("Informe a quantidade de batata vendidos em kg:"));
+    let batataDoce = Number(prompt("Informe a quantidade de batataDoce vendidos em kg:"));
+    let alface = Number(prompt("Informe a quantidade de alface vendidos em kg:"));
+    let cebola = Number(prompt("Informe a quantidade de cebola vendidos em kg:"));
+    let cebolinha = Number(prompt("Informe a quantidade de cebolinha vendidos em kg:"));
+    let beterraba = Number(prompt("Informe a quantidade de beterraba vendidos em kg:"));
     //PROCESSAMENTO
+    const calcTomate = tomate * 3.90;
+    const calcBatata = batata * 3.40;
+    const calcBatataDoce = batataDoce * 4.70;
+    const calcAlface = alface * 1.50;
+    const calcCebola = cebola * 2.90;
+    const calcCebolinha = cebolinha * 1.40;
+    const calcBeterraba = beterraba * 4.10;
+    const faturamentoFeirante = calcAlface + calcBatata + calcBatataDoce + calcBeterraba + calcCebola + calcCebolinha + calcTomate;
 
-    
+    document.write(`Faturamento do feirante: R$${faturamentoFeirante} <br><br> Total tomate: R$${calcTomate} <br><br> Total R$${calcBatata} <br><br> Total batata-doce: R$${calcBatataDoce} <br><br> Total alface: R$${calcAlface} <br><br> Total cebola: R$${calcCebola} <br><br> Total cebolinha: R$${calcCebolinha} <br><br> Total beterraba: R$${calcBeterraba}`)
     //SAÍDA
-    
+    R$
 </script>
